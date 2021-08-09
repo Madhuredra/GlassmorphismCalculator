@@ -100,3 +100,11 @@ span:hover{
     background: linear-gradient(#22c1c3,#fdbb2d);
     border-radius: 50%;
 }
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
