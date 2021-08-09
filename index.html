@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GlassMorphismCalculator</title>
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="container">
+        <p style="text-align: center; color: white; font-size: 25px;">Madhurendra Nath Tiwari</p>
+        <form name="calc" class="calculator">
+            <input type="text" class="inpt"/>
+            <span class="num" id="#cl" onclick="Clear()">C</span>
+            <span class="num" onclick="Enter(1)">1</span>
+            <span class="num" onclick="Enter(2)">2</span>
+            <span class="num" onclick="Enter(3)">3</span>
+            <span class="num" onclick="Enter(4)">4</span>
+            <span class="num" onclick="Enter(5)">5</span>
+            <span class="num" onclick="Enter(6)">6</span>
+            <span class="num" onclick="Enter(7)">7</span>
+            <span class="num" onclick="Enter(8)">8</span>
+            <span class="num" onclick="Enter(9)">9</span>
+            <span class="num" onclick="Enter(0)">0</span>
+            <span class="num" onclick="Enter('+')">+</span>
+            <span class="num" onclick="Enter('-')">-</span>
+            <span class="num" onclick="Enter('*')">*</span>
+            <span class="num" onclick="Enter('/')">/</span>
+            <span class="num" id="plus" onclick="document.querySelector('.inpt').value=eval(document.querySelector('.inpt').value)">=</span>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

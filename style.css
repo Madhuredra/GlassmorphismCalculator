@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #091921;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, orange 10%, yellow 25%,violet 65%,indigo);
+    clip-path: circle(10% at 40% 20%);
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, orange 10%, yellow 25%,violet 65%,indigo);
+    clip-path: circle(10% at 60% 80%);
+}
+.container{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    width: 300px;
+    z-index: 10;
+    overflow: hidden;
+    border-radius: 6px;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+.container .calculator{
+    position: relative;
+    display: grid;
+}
+.inpt{
+    grid-column: span 4;
+    height: 120px;
+    width: 300px;
+    text-align: right;
+    font-size: 40px;
+    color: #f3f3f3;
+    outline: none;
+    background: transparent;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+
+}
+span{
+    display: grid;
+    height: 75px;
+    width: 75px;
+    place-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+span:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: 900;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.num , #cl{
+    cursor: pointer;
+}
+#plus:hover{
+    background:rgba(255, 0, 0, 0.5);
+}
+.circle1{
+    position: absolute;
+    width: 200px;
+    left: 31%;
+    top: 63%;   
+    height: 200px;
+    background: linear-gradient(#22c1c3,#fdbb2d);
+    border-radius: 50%;
+}
+.circle2{
+    position: absolute;
+    left: 55%;
+    top: 5%;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#22c1c3,#fdbb2d);
+    border-radius: 50%;
+}
